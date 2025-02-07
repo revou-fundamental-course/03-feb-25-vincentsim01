@@ -18,7 +18,7 @@
             <label for="temperature"><u>Celcius</u> (&deg; C):</label><br><br>
             <input type="number" id="temperature"  oninput="savetempera()">
             <div id="buttonContainer">
-                <button type="button" class="buttonClass" id="convertButton" onclick="convertCelciustoFahrenheit()">Convert</button><button type="button" class="buttonClass" id="ResetButton">Reset</button><button type="button" class="buttonClass" id="ReveseButton">Reverse</button>
+                <button type="button" class="buttonClass" id="convertButton" onclick="convertCelciustoFahrenheit()">Convert</button><button type="button" class="buttonClass" id="ResetButton" onclick="resetvalue()">Reset</button><button type="button" class="buttonClass" id="ReveseButton">Reverse</button>
             </div>
         </div>
 
@@ -28,8 +28,8 @@
         </div>
 
         <div class="formInputContainer">
-            <label for="calculationMethod"><u>Cara Kalkulasi:</label><br><br>
-            <input type="text" id="calculationMethod" name="calculationMethod">
+            <label for="calculationMethod"><u>Cara Kalkulasi:</u></label><br><br>
+            <input type="text" id="calculationMethod" value="">
         </div>
     </form>
     <br><br>
@@ -42,15 +42,16 @@
     <hr>
     <div id="explainContainer">
         <p>
-            Metode yang digunakan adalah rumus yang menggunakan persamaan linear yang menghubungkan suhu dalam dua bentuk. Di sini, rumus ini adalah: Fahrenheit = Celcius * 9/5 + 32.
+           Suhu S dalam derajat (&deg; F) sama dengan suhu S dalam derajat Celcius (&deg; C) kali 9/5 tambah 32.
         </p>
         <p>
-            Cara penggunaan: Masukkan suhu Celcius pada kotak yang disebut "Celcius", kemudian tekan tombol "Convert" yang disebut "Konversi". Hasil konversi akan muncul di kotak yang disebut "Fahrenheit".
+            S<sub>(&deg; F)</sub> = (S<sub>(&deg; C)</sub>*9/5)+32
+            <br><br>
+            Atau
+            <br><br>
+            S<sub>(&deg; F)</sub> = (S<sub>(&deg; C)</sub>*1.8)+32
         </p>
-        <p>
-            Jika ingin melakukan kalibrasi, tekan tombol "Reset" yang disebut "Reset".
-        </p>
-    </div>"
+
 
     
 </body>
