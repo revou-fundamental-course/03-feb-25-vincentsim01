@@ -29,7 +29,6 @@ function convertCelciustoFahrenheit(){
 
 }
 
-
 function resetvalue(){
     document.getElementById('temperature').value = "";
     document.getElementById('fahrenheit').value = "";
@@ -37,4 +36,42 @@ function resetvalue(){
 }
 
 
+function convertFahrenheittoCelcius(){
+    try{    
+        if(document.getElementById("temperatureF").value==""){
+            alert("Please enter a temperature value");
+            return;
+        }else{
+            let fahrenheit = document.getElementById("temperatureF").value;
+            let celcius = (fahrenheit-32)*5/9;
+            document.getElementById('celcius').value = celcius;
+            document.getElementById('calculationMethodF').value= `(${fahrenheit}-32)*5/9`;
+        }
+    }catch(error){
+        alert("An error occurred: " + error.message);
+    }
+
+}
+
+
+function resetvalueF(){
+    document.getElementById('temperatureF').value = "";
+    document.getElementById('celcius').value = "";
+    document.getElementById('calculationMethodF').value = "";
+}
+
+
+
+
+
+let FtoC = document.getElementById("FtoC");
+
+function toggletoFtoC(){
+    document.getElementById('CtoFContainer').classList.toggle("hidden");
+    document.getElementById('FtoCContainer').classList.toggle("hidden");
+    // document.getElementById('FtoC').classList.toggle("hidden");
+    // document.getElementById('CtoF').classList.toggle("hidden");
+    // document.getElementById("FtoC").classList.toggle = ("none");
+
+}
 

@@ -10,7 +10,13 @@
 </head>
 <body>
     <div id="titleForm"><h1>Temperature Conversion</h1></div>
-    <form id="converterForm">
+
+    <button id="FtoC" onclick="toggletoFtoC()">Fahrenheit x Celcius</button>
+    <!-- <button id="CtoF" onclick="toggletoFtoC()" class="hidden">Celcius to Fahrenheit</button> -->
+    <br>
+    <br>
+    <div id="CtoFContainer">
+    <form id="converterFormCtoF">
         <br>
         <div id="formInstruction" style="font-style: italic;">How To Use: Masukan suhu derajat Celcius ( &deg; C) ke kotak di bawah, lalu klik tombol konversi  untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg; F) </div>
             <br></br>
@@ -32,6 +38,36 @@
             <input type="text" id="calculationMethod" value="">
         </div>
     </form>
+
+    
+    </div>
+
+    <div id="FtoCContainer" class="hidden">
+        <form id="converterFormFtoC">
+            <br>
+            <div id="formInstruction" style="font-style: italic;">How To Use: Masukan suhu derajat Fahrenheit ( &deg; F) ke kotak di bawah, lalu klik tombol konversi  untuk mendapatkan hasil konversi dalam bentuk Celcius (&deg; C) </div>
+                <br></br>
+            <div class="formInputContainer">
+                <label for="temperatureF"><u>Fahrenheit</u> (&deg; F):</label><br><br>
+                <input type="number" id="temperatureF"  oninput="savetemperaF()">
+                <div id="buttonContainer">
+                    <button type="button" class="buttonClass" id="convertButton" onclick="convertFahrenheittoCelcius()">Convert</button><button type="button" class="buttonClass" id="ResetButton" onclick="resetvalueF()">Reset</button><button type="button" class="buttonClass" id="ReveseButton">Reverse</button>
+                </div>
+            </div>
+    
+            <div class="formInputContainer">
+                <label for="celcius"><u>Celcius</u> (&deg; C):</label><br><br>
+                <input type="number" id="celcius" value="">
+            </div>
+    
+            <div class="formInputContainer">
+                <label for="calculationMethodF"><u>Cara Kalkulasi:</u></label><br><br>
+                <input type="text" id="calculationMethodF" value="">
+            </div>
+        </form>
+    
+        
+        </div>
     <br><br>
     <span id="FtoC">Fahrenheit to Celcius</span>
     <br><br>

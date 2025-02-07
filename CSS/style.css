@@ -1,4 +1,11 @@
-#converterForm{
+#converterFormCtoF{
+    background-color: bisque;
+    border-radius: 20px;
+    border:solid 1px black;
+    padding:20px;
+}
+
+#converterFormFtoC{
     background-color: bisque;
     border-radius: 20px;
     border:solid 1px black;
@@ -45,6 +52,25 @@
     padding:20px;
 }
 
+#temperatureF{
+    width:95%;
+    border-radius:20px;
+    padding:20px;
+}
+
+#celcius{
+    width:95%;
+    border-radius:20px;
+    padding:20px;
+}
+
+#calculationMethodF{
+    width:95%;
+    border-radius:20px;
+    padding:20px;
+}
+
+
 #temperature:focus{
     /* background-color:blue; */
     transform:scale(1.009);
@@ -78,7 +104,7 @@
 }
 
 #FtoC:hover{
-    transform:scale(2);
+    transform:scale(1.01);
     cursor: pointer;
     color: green;
 }
@@ -89,4 +115,8 @@
     border:solid 1px black;
     border-radius:20px;
     padding:20px;
+}
+
+.hidden{
+    display:none;
 }
