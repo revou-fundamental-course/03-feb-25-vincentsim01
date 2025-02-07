@@ -11,7 +11,7 @@
 <body>
     <div id="titleForm"><h1>Temperature Conversion</h1></div>
 
-    <button id="FtoC" onclick="toggletoFtoC()">Fahrenheit x Celcius</button>
+    <button id="FtoC" onclick="toggletoFtoC()">Ganti Konverter</button>
     <!-- <button id="CtoF" onclick="toggletoFtoC()" class="hidden">Celcius to Fahrenheit</button> -->
     <br>
     <br>
@@ -24,7 +24,7 @@
             <label for="temperature"><u>Celcius</u> (&deg; C):</label><br><br>
             <input type="number" id="temperature"  oninput="savetempera()">
             <div id="buttonContainer">
-                <button type="button" class="buttonClass" id="convertButton" onclick="convertCelciustoFahrenheit()">Convert</button><button type="button" class="buttonClass" id="ResetButton" onclick="resetvalue()">Reset</button><button type="button" class="buttonClass" id="ReveseButton">Reverse</button>
+                <button type="button" class="buttonClass" id="convertButton" onclick="convertCelciustoFahrenheit()">Convert</button><button type="button" class="buttonClass" id="ResetButtonF" onclick="resetvalue()">Reset</button>
             </div>
         </div>
 
@@ -51,7 +51,7 @@
                 <label for="temperatureF"><u>Fahrenheit</u> (&deg; F):</label><br><br>
                 <input type="number" id="temperatureF"  oninput="savetemperaF()">
                 <div id="buttonContainer">
-                    <button type="button" class="buttonClass" id="convertButton" onclick="convertFahrenheittoCelcius()">Convert</button><button type="button" class="buttonClass" id="ResetButton" onclick="resetvalueF()">Reset</button><button type="button" class="buttonClass" id="ReveseButton">Reverse</button>
+                    <button type="button" class="buttonClass" id="convertButtonF" onclick="convertFahrenheittoCelcius()">Convert</button><button type="button" class="buttonClass" id="ResetButtonF" onclick="resetvalueF()">Reset</button>
                 </div>
             </div>
     
@@ -69,7 +69,7 @@
         
         </div>
     <br><br>
-    <span id="FtoC">Fahrenheit to Celcius</span>
+    <!-- <span id="FtoC">Fahrenheit to Celcius</span> -->
     <br><br>
     <h1 style="text-align:center;">
         Cara Konversi Dari Celcius (&deg; C) ke Fahrenheit (&deg; F)
