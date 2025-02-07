@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./CSS/style.css">
     <script src="./JS/script.js"></script>
+
 </head>
 <body>
     <div id="titleForm"><h1>Temperature Conversion</h1></div>
@@ -15,15 +16,15 @@
             <br></br>
         <div class="formInputContainer">
             <label for="temperature"><u>Celcius</u> (&deg; C):</label><br><br>
-            <input type="number" id="temperature" name="temperature" min="-273.15" step="0.01" required>
+            <input type="number" id="temperature"  oninput="savetempera()">
             <div id="buttonContainer">
-                <button type="button" class="buttonClass" id="convertButton">Convert</button><button type="button" class="buttonClass" id="ResetButton">Reset</button><button type="button" class="buttonClass" id="ReveseButton">Reverse</button>
+                <button type="button" class="buttonClass" id="convertButton" onclick="convertCelciustoFahrenheit()">Convert</button><button type="button" class="buttonClass" id="ResetButton">Reset</button><button type="button" class="buttonClass" id="ReveseButton">Reverse</button>
             </div>
         </div>
 
         <div class="formInputContainer">
             <label for="fahrenheit"><u>Fahrenheit</u> (&deg; C):</label><br><br>
-            <input type="number" id="fahrenheit" name="fahrenheit">
+            <input type="number" id="fahrenheit" value="">
         </div>
 
         <div class="formInputContainer">
